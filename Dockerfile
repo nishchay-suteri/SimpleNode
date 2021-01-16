@@ -1,6 +1,10 @@
 # Use NodeJS base image
 FROM node:13
 
+# For Environment variable usage
+ARG FAVORITE_FOOD
+ENV FAVORITE_FOOD=$FAVORITE_FOOD
+
 # Create app directory
 WORKDIR /usr/src/app
 
